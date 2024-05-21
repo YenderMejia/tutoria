@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorías</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Tutorías</h1>
+        <div class="user-info">
+            <button onclick="goToMessaging()">Mensajería</button>
+            <span>Usuario</span>
+            <button onclick="cerrarSesion()">Cerrar</button>
+        </div>
+    </div>
+    <div class="welcome">
+        <h2>Bienvenido, estudiante Usuario</h2>
+    </div>
+    <div class="content">
+        <div class="left-panel">
+            <div class="section">
+                <h3>Solicitudes pendientes</h3>
+                <ul id="pending-requests"></ul>
+            </div>
+            <div class="section">
+                <h3>Sesiones programadas</h3>
+                <ul id="scheduled-sessions"></ul>
+            </div>
+            <div class="section">
+                <h3>Historial de tutorías</h3>
+                <ul id="tutoring-history"></ul>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h3>Formulario de solicitud</h3>
+            <form id="request-form">
+                <label for="topic">Tema</label>
+                <input type="text" id="topic" name="topic" required>
+                
+                <label for="date">Día/Mes/Año</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Hora (solo hora)</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
